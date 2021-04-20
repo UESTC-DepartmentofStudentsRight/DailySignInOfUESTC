@@ -5,15 +5,22 @@
  *
  */
 
-const url = "https://jzsz.uestc.edu.cn/wxvacation/./monitorRegisterForReturned";
+const url = "https://jzsz.uestc.edu.cn/wxvacation/./monitorRegister";
 const method = "POST";
 const headers = {"Content-Type": "application/json", "Cookie": ""};//此处加入自己的coockie
 const data = {
-  "healthCondition" : "正常",
-  "todayMorningTemperature" : "36°C以下",
-  "yesterdayEveningTemperature" : "36°C以下",
-  "yesterdayMiddayTemperature" : "36°C以下",
-  "location" : "四川省成都市郫都区S9"
+  "isLeaveChengdu" : 0,
+  "currentAddress" : "四川省成都市郫都区丹桂路",
+  "isContactWuhan" : 0,
+  "isSymptom" : 0,
+  "temperature" : "36.5°C~36.9°C",
+  "province" : "四川省",
+  "healthInfo" : "正常",
+  "isFever" : 0,
+  "remark" : "",
+  "city" : "成都市",
+  "county" : "郫都区",
+  "isInSchool" : 0
 };
 
 const myRequest = {
