@@ -3,14 +3,21 @@ import json
 from datetime import datetime as dt
 import time
 
-payload = {"healthCondition": "正常",
-           "todayMorningTemperature": "36.5°C~36.9°C",
-           "yesterdayEveningTemperature": "36.5°C~36.9°C",
-           "yesterdayMiddayTemperature": "36.5°C~36.9°C",
-           "location": "四川省成都市郫都区S9"
+payload = { "isLeaveChengdu" : 0,
+  "currentAddress" : "四川省成都市郫都区丹桂路",
+  "isContactWuhan" : 0,
+  "isSymptom" : 0,
+  "temperature" : "36.5°C~36.9°C",
+  "province" : "四川省",
+  "healthInfo" : "正常",
+  "isFever" : 0,
+  "remark" : "",
+  "city" : "成都市",
+  "county" : "郫都区",
+  "isInSchool" : 0
            }
 
-url = "https://jzsz.uestc.edu.cn/wxvacation/./monitorRegisterForReturned"
+url = "https://jzsz.uestc.edu.cn/wxvacation/./monitorRegister"
 
 headers = {'Content-Type': 'application/json ',
            'Cookie': 'JSESSIONID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'  # your cookie
