@@ -5,23 +5,23 @@
  *
  */
 
-const url = "https://jzsz.uestc.edu.cn/wxvacation/./monitorRegister";
+const url = "https://jzsz.uestc.edu.cn/wxvacation/monitorRegister;
 const method = "POST";
 const headers = {"Content-Type": "application/json", "Cookie": ""};//此处加入自己的coockie
-const data = {
-  "isLeaveChengdu" : 0,
-  "currentAddress" : "四川省成都市郫都区丹桂路",
+const data ={
+  "isLeaveChengdu" : 1,
+  "currentAddress" : "广东省深圳市福田区高级中学",
   "isContactWuhan" : 0,
   "isSymptom" : 0,
   "temperature" : "36.5°C~36.9°C",
-  "province" : "四川省",
+  "province" : "广东省",
   "healthInfo" : "正常",
   "isFever" : 0,
   "remark" : "",
-  "city" : "成都市",
-  "county" : "郫都区",
+  "city" : "深圳市",
+  "county" : "福田区",
   "isInSchool" : 0
-};
+}
 
 const myRequest = {
     url: url,
